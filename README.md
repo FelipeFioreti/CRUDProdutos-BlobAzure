@@ -2,8 +2,8 @@
 
 Este projeto é uma aplicação web simples desenvolvida com **Python** e **Streamlit**, que realiza um CRUD (Create, Read, Update, Delete) de produtos. Os dados são armazenados e recuperados de um **Azure Blob Storage**, garantindo persistência em nuvem.
 
-## Atividade prática
-Este projeto foi desenvolvido como parte de uma atividade prática do curso **Microsoft Azure Cloud Native**.
+## 🎯 Atividade prática DIO
+Este projeto foi desenvolvido como parte de uma atividade prática do curso **Microsoft Azure Cloud Native** da plataforma **DIO**.
 
 ## 🚀 Funcionalidades
 

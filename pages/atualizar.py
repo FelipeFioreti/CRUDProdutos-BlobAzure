@@ -1,13 +1,13 @@
-
 import streamlit as st
 from Managers.productManager import ProductManager
 
-st.set_page_config(page_title="Cadastrar Produto", layout="centered")
-st.title("Cadastro de Produtos")
+st.set_page_config(page_title="Atualizar Produto", layout="centered")
+st.title("Atualização de Produtos")
 
 pm = ProductManager()
 
-with st.form("post", clear_on_submit=True):
+with st.form("put", clear_on_submit=True):
+    id = st.text_input("ID do Produto")
     name = st.text_input("Nome do Produto")
     price = st.number_input("Preço", min_value=0.0, format="%.2f")
     description = st.text_area("Descrição")
@@ -19,8 +19,9 @@ with st.form("post", clear_on_submit=True):
         if name == "" or description == "" or image == "":
             st.warning("Preencha todos os campos e envie uma imagem.")
         else:
-            resultado = pm.insert_product(name, price, description, image)
+            resultado = pm.update_product(id,name, price, description, image)
             if resultado:
-                st.success("Produto cadastrado com sucesso!")
+                st.success("Produto atualizado com sucesso!")
             else:
-                st.error(f"Erro ao cadastrar.")
+                st.error(f"Erro ao atualizar.")
+

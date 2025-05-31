@@ -20,3 +20,6 @@ Este projeto foi desenvolvido como parte de uma atividade prática do curso **Mi
 - **Python 3.8+**
 - **Streamlit**
 - **Azure Blob Storage SDK (`azure-storage-blob`)**
+
+## 🕒 A ser implementado
+- **Comunicação atráves de API**
